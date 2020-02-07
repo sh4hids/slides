@@ -1,8 +1,10 @@
 import { Head } from 'mdx-deck'
 import darkTheme from '../src/views/styles/dark.js'
-import {Box, Text} from '../src/views/components'
+import {Box, Text, Layout, Provider} from '../src/views/components'
+import bgImg from './images/bg.jpg';
+import jeffAtwood from './images/jeff-atwood.jpg';
 
-export const theme = darkTheme
+export const themes = [darkTheme, Provider];
 
 <Head>
   <title>Building A Desktop App Using Electron, Node and React</title>
@@ -11,21 +13,31 @@ export const theme = darkTheme
 
 <!-- Slide Starts Here -->
 
-<Box width="60vw" textAlign="center">
-  <Text variant="h1">
-    Building A Desktop App Using Electron, Node & React
-  </Text>
-  <Text variant="h5">by</Text>
-  <Text variant="h3">
-    Shahidul Islam Majumder
-  </Text>
-</Box>
+<Layout bgImage={bgImg}>
+
+  <Box width="60vw" textAlign="center">
+    <Text variant="h1">
+      Building A Desktop App Using Electron, Node & React
+    </Text>
+    <Text variant="h5">by</Text>
+    <Text variant="h3">
+      Shahidul Islam Majumder
+    </Text>
+  </Box>
+  
+</Layout>
 
 ---
+
+
+<Layout bgImage={jeffAtwood}>
 
 <Box width="64vw" textAlign="center">
   <Text variant="h2">
     “Any application that can be written in JavaScript, will eventually be written in JavaScript.”
   </Text>
-  <Text variant="h4">Jeff Atwood, Author, Entrepreneur, Cofounder of StackOverflow</Text>
-</Box>
+  <Text fontSize="1.4em">Jeff Atwood, Author, Entrepreneur, Cofounder of StackOverflow</Text>
+  </Box>
+
+  </Layout>
+
