@@ -1,8 +1,11 @@
 import { Head } from 'mdx-deck'
 import darkTheme from '../src/views/styles/dark.js'
-import {Box, Text, Layout, Provider} from '../src/views/components'
+import {Box, Image, Text, Layout, Provider} from '../src/views/components'
 import bgImg from './images/bg.jpg';
+import battleField from './images/battlefield_1.gif';
 import jeffAtwood from './images/jeff-atwood.jpg';
+import adobeCreative from './images/adobe.png';
+import nvidiaExp from './images/geforce-experience.jpg';
 
 export const themes = [darkTheme, Provider];
 
@@ -36,8 +39,35 @@ export const themes = [darkTheme, Provider];
   <Text variant="h2">
     “Any application that can be written in JavaScript, will eventually be written in JavaScript.”
   </Text>
-  <Text fontSize="1.4em">Jeff Atwood, Author, Entrepreneur, Cofounder of StackOverflow</Text>
+  <Text  fontSize="1.4em">Jeff Atwood, Author, Entrepreneur, Cofounder of StackOverflow</Text>
+</Box>
+
+</Layout>
+
+
+---
+
+<Layout>
+  <Image src={battleField} />
+  <Box position="fixed" bottom={72} bg="rgba(0,0,0,0.7)" margin={0} padding="0 16px 4px 16px" border="4px solid #ffe066" borderRadius={8}>
+    <Text variant="h2" margin={0}>Battlefield 1</Text>
   </Box>
+</Layout>
 
-  </Layout>
+---
 
+<Layout>
+  <Image src={nvidiaExp} />
+  <Box position="fixed" bottom={72} bg="rgba(0,0,0,0.9)" margin={0} padding="0 16px 4px 16px" border="4px solid #ffe066" borderRadius={8}>
+    <Text variant="h2" margin={0}>Nvidia Gforce Experience</Text>
+  </Box>
+</Layout>
+
+---
+
+<Layout>
+  <Image src={adobeCreative} />
+  <Box position="fixed" bottom={72} bg="rgba(0,0,0,0.9)" margin={0} padding="0 16px 4px 16px" border="4px solid #ffe066" borderRadius={8}>
+    <Text variant="h2" margin={0}>Adobe Creative Suite</Text>
+  </Box>
+</Layout>

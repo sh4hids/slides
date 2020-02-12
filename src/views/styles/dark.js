@@ -1,10 +1,10 @@
 export default {
   fonts: {
-    body: "'Open Sans', 'Noto Color Emoji', sans-serif",
+    body: "'Playfair Display', 'Noto Color Emoji', sans-serif",
     monospace: '"Roboto Mono", monospace',
   },
   colors: {
-    text: "#21AAE2",
+    text: "#ffe066",
     background: "black",
     primary: "blue",
   },
