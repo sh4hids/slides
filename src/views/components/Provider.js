@@ -52,7 +52,7 @@ const Provider = props => {
           </svg>
           <a href="https://twitter.com/sh4hids">@sh4hids</a>
         </span>
-        <Text color="white" margin={0} padding={0}>
+        <Text variant="caption" color="white" margin={0} padding={0}>
           {state.index + 1}/{state.length}
         </Text>
         <span>

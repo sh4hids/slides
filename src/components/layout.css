@@ -42,10 +42,14 @@ template {
 a {
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
+  text-decoration: none;
+  color: #21aae2;
+  transition: all ease-in-out 0.2s;
 }
 a:active,
 a:hover {
   outline-width: 0;
+  color: #94d82d;
 }
 abbr[title] {
   border-bottom: none;
@@ -614,6 +618,20 @@ pre tt:before,
 pre tt:after {
   content: "";
 }
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+}
+
+.footer-content {
+  max-width: 960px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 0.7rem;
+}
+
 @media only screen and (max-width: 480px) {
   html {
     font-size: 100%;
