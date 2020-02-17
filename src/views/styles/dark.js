@@ -4,7 +4,7 @@ export default {
     monospace: '"Roboto Mono", monospace',
   },
   colors: {
-    text: "#ffe066",
+    text: "#00BFFF",
     background: "black",
     primary: "blue",
   },
