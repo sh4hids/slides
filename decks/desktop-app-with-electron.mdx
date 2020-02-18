@@ -1,6 +1,6 @@
 import { Head } from 'mdx-deck'
 import darkTheme from '../src/views/styles/dark.js'
-import {Box, Image, Text, Layout, Provider} from '../src/views/components'
+import {Box, Image, Text, Layout, Link, Provider} from '../src/views/components'
 import bgImg from './images/bg.jpg';
 import battleField from './images/battlefield_1.gif';
 import jeffAtwood from './images/jeff-atwood.jpg';
@@ -113,6 +113,20 @@ export const themes = [darkTheme, Provider];
 
 <Layout>
   <Text>Let's build a little code editor...</Text>
+</Layout>
+
+---
+
+
+<Layout bgImage={bgImg}>
+
+<Box width="60vw">
+    <Text variant="h1">Links</Text>
+    <Text variant="h3">Slides: <Link href="https://slides.shahid.pro">https://slides.shahid.pro</Link></Text>
+    <Text variant="h3">Demo project: <Link href="https://github.com/sh4hids/presentation-demo/tree/electron-editor">https://github.com/sh4hids/presentation-demo/tree/electron-editor</Link></Text>
+    <Text variant="h3">Deskaide: <Link href="https://github.com/deskaide/deskaide">https://github.com/deskaide/deskaide</Link></Text>
+  </Box>
+  
 </Layout>
 
 ---
