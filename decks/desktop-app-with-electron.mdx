@@ -8,6 +8,9 @@ import adobeCreative from './images/adobe.png';
 import nvidiaExp from './images/geforce-experience.jpg';
 import electronApps from './images/electron-apps.svg';
 import electron from './images/electron.svg';
+import battleFieldReact from './images/battlefield1React.png';
+import whattt from './images/whatttt.webp';
+import thanks from './images/thanks.webp';
 
 export const themes = [darkTheme, Provider];
 
@@ -62,6 +65,14 @@ export const themes = [darkTheme, Provider];
 ---
 
 <Layout>
+  <Box>
+    <img src={battleFieldReact} />
+  </Box>
+</Layout>
+
+---
+
+<Layout>
   <Image src={nvidiaExp} />
   <Box position="fixed" bottom={72} bg="rgba(0,0,0,0.9)" margin={0} padding="0 16px 4px 16px" border="4px solid #ffe066" borderRadius={8}>
     <Text variant="h2" margin={0}>Nvidia Gforce Experience</Text>
@@ -80,16 +91,16 @@ export const themes = [darkTheme, Provider];
 ---
 
 <Layout>
-  <Image src={electronApps} />
+  <Image src={whattt} />
+  <Box position="fixed" top={72} left={72} bg="rgba(0,0,0,0.9)" margin={0} padding="0 16px 4px 16px" border="4px solid #ffe066" borderRadius={8}>
+    <Text variant="h2" margin={0}>Desktop app in JavaScript?</Text>
+  </Box>
 </Layout>
 
 ---
 
 <Layout>
-  <Image src={whattt} />
-  <Box position="fixed" top={72} left={72} bg="rgba(0,0,0,0.9)" margin={0} padding="0 16px 4px 16px" border="4px solid #ffe066" borderRadius={8}>
-    <Text variant="h2" margin={0}>Desktop app in JavaScript?</Text>
-  </Box>
+  <Image src={electronApps} />
 </Layout>
 
 ---
@@ -102,4 +113,10 @@ export const themes = [darkTheme, Provider];
 
 <Layout>
   <Text>Let's build a little code editor...</Text>
+</Layout>
+
+---
+
+<Layout>
+  <Image src={thanks} />
 </Layout>
