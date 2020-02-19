@@ -1,6 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import Text from "./Text"
+import GlobalStyle from "../../views/styles/GlobalStyle"
 import { useDeck } from "mdx-deck"
 
 const Footer = styled.div`
@@ -35,6 +36,7 @@ const Provider = props => {
   return (
     <div>
       {props.children}
+      <GlobalStyle />
       <Footer>
         <span>
           <svg
